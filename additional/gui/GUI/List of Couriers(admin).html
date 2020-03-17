@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input News</title>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>tinymce.init({ selector:'textarea' });</script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</head>
+<style type="text/css">
+		body{
+		/*color: #fff;*/
+		background-image: url("wallpaper.jpg");
+		font-family: 'Roboto', sans-serif;
+		background-size: cover;
+	}
+	table, td, th {
+  border: 1px solid black;
+  text-align: center;
+
+}
+
+table {
+
+	background-color: white;
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+}
+
+th {
+  text-align: center;
+}
+
+
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<body>
+	<img style="margin:auto;width: 30%;" src="Picture1.png" >
+	<b><h3 style="text-align: center;">List of couriers</h3></b>
+<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<table>
+  <tr>
+  <th>Name</th>
+  <th>Username</th>
+  <th></th>
+  </tr>
+  <tr>
+  <td>Peter Griffin</td>
+  <td>Griffindor123</td>
+  <td><button type="submit" class="btn btn-primary btn-block" style="background-color: rgb(87, 178, 208); width: 100px; margin: auto;">Edit</button></td>
+  </tr>
+  <tr>
+  <td>Lois Griffin</td>
+  <td>Griffinfinfin</td>
+  <td><button type="submit" class="btn btn-primary btn-block" style="background-color: rgb(87, 178, 208); width: 100px; margin: auto;">Edit</button></td>
+  </tr>
+  <tr>
+  <td>Joe Swanson</td>
+  <td>Swansea432</td>
+  <td><button type="submit" class="btn btn-primary btn-block" style="background-color: rgb(87, 178, 208); width: 100px; margin: auto;">Edit</button></td>
+  </tr>
+  <tr>
+  <td>Cleveland Brown</td>
+  <td>Brownie69</td>
+  <td><button type="submit" class="btn btn-primary btn-block" style="background-color: rgb(87, 178, 208); width: 100px; margin: auto;">Edit</button></td>
+</tr>
+</table>
+
+
+</body>
+</html>

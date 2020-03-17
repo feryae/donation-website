@@ -1,0 +1,164 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Do-Nation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    
+    <style>
+/*    table{
+        border: 1px solid black;
+        width: 25%;
+        margin-left: 70%;
+        margin-top: 10%;
+        border-radius: 5px;
+        background-color: whitesmoke;
+    }*/
+    p.sign{
+        margin-top: 5%;
+        border-bottom: 2px solid black;
+        font-size: 30px;
+    }
+    p.do{
+        font-size: 50px;
+        float: left;
+        margin-left: 25%;
+    }
+    .logodonation{
+        float: left;
+        margin-top: 100px;
+        margin-left: 5%;
+        width: 50%;
+        
+    }
+/*    input{
+        padding: 10px;
+        width: 80%;
+        margin-top: 5%;
+        margin-left:7%;
+        border-radius: 5px;
+        border: 1px solid black;
+    }*/
+/*    button{
+        padding: 10px;
+        width: 86%;
+        margin-left: 7%;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: white;
+    }*/
+    body{
+        
+        background-image: url("wallpaper.jpg");
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: cover;
+    }
+
+    footer{
+        
+        margin-bottom: 10px;
+    }
+
+    .login-form {
+        width: 420px;
+        /*margin: 100px;*/
+        margin-top: 120px;
+        float: right;
+        margin-right: 100px;
+        
+
+    }
+    .login-form form {
+        margin-bottom: 15px;
+        /* background: #c0c9bf; */
+        background: transparent 50%;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .login-form h2 {
+        margin: 0 0 15px;
+
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 10px;
+    }
+    .btn {        
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    #gradfooter {
+        background: linear-gradient(top, transparent 100%, black 50%);
+        /*background: radial-gradient(ellipse, rgba(55,127,170,1) 30%, rgba(0,55,145,1) 51%);*/
+        background: radial-gradient(at top,#008FEB,#003791,#003791);
+
+        background-size: 100% 100%;
+    } 
+    #fontfooter {
+        position: relative;
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: "SST W55 Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        transition: 0.3s;
+    }   
+    </style>
+</head>
+
+
+<body>
+   <img style=""class="logodonation" src="Picture1.png" >
+   <div class="login-form">
+    <form action="/examples/actions/confirmation.php" method="post">
+        <h2 class="text-center">Sign in</h2>       
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username" required="required">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" required="required">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block" style="background-color: rgb(87, 178, 208)">Sign in</button>
+        </div>
+        <div class="clearfix">
+            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+            <a href="#" class="pull-right">Forgot Password?</a>
+        </div>        
+     </form>
+     <p class="text-center"><a href="#">Create an Account</a></p>
+    </div>
+    
+
+</body>
+<!-- <footer class="page-footer font-small indigo " id='foter'>
+    <div class='row' align="middle">
+        <div id='gradfooter'>
+          <br>
+          <a id="fontfooter" href="#!"> About this site </a>
+          |
+          <a id="fontfooter" href="#!"> Terms and Conditions </a>
+          |
+          <a id="fontfooter" href="#!"> Privacy Policy </a>
+          |
+          <a id="fontfooter" href="#!"> Intellectual Property Notices </a>
+          |
+          <a id="fontfooter" href="#!"> Publisher&Developer Relations </a>
+          <br><br>
+          <p id="fontfooter" style="color : #00a2ff">©2019 Sony Interactive Entertainment Inc. All Rights Reserved.</p>
+          <img src="<?php echo base_url('img/icon_global.png'); ?>" style="width: 16px "/> 
+          <a id="fontfooternothover" href="#!" style="padding-bottom: 0"> Indonesia (English) </a> 
+          <br><br>
+        </div>
+        <div>
+            <img src="<?php echo base_url('img/sie_logo.png'); ?>" style="width: 100px; margin-left: 80%;margin-right: 20%;margin-top: -90px"/> 
+        </div>
+    </div>
+</footer> -->
+</html> 

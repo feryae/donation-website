@@ -1,0 +1,93 @@
+create table user (
+	username varchar(15),
+	email varchar (32),
+	fullname varchar (32),
+	password varchar(32),
+	phone_number int,
+	PRIMARY KEY (username)
+);
+
+create table courier (
+	courier_id varchar(5),
+	username varchar(20),
+	PRIMARY KEY (courier_id),
+	FOREIGN KEY (username) REFFERENCES user(username)
+);
+
+create table donor (
+	donor_id varchar(5),
+	username varchar(20),
+	address text,
+	PRIMARY KEY (donor_id),
+	FOREIGN KEY (username) REFFERENCES user(username)
+);
+
+create table admin (
+	admin_id varchar(5),
+	username varchar(20)
+	PRIMARY KEY (admin_id),
+	FOREIGN KEY (username) REFFERENCES user(username)
+);
+
+create table delivery (
+	delivery_id varchar(7),
+	admin_id varchar(5),
+	dlv_date date,
+	dlv_location varchar(20),
+	PRIMARY KEY (delivery_id),
+	FOREIGN KEY (admin_id) REFFERENCES admin(admin_id)
+);
+
+create table news (
+	news_id varchar(5),
+	admin_id varhcar(5),
+	news_location varchar(20),
+	title varcher (32),
+	news_date date,
+	information text,
+	PRIMARY KEY (news_id)
+	FOREIGN KEY (admin_id) REFFERENCES admin(admin_id)
+);
+
+create table donation (
+	donation_id varchar(5),
+	donor_id varchar(5),
+	donation_date date,
+	PRIMARY KEY (donation_id),
+	FOREIGN KEY (donor_id) REFFERENCES donor(donor_id)
+);
+
+create table do_money (
+	transaction_id varchar(5),
+	donation_id int,
+	banknumber int,
+	ammount int,
+	FOREIGN KEY (donation_id) REFFERENCES donation(donation_id)
+);
+
+create do_goods(
+	goods_id int,
+	donation_id int,
+	goods_type varchar(10),
+	goods_ammount varchar (7),
+	PRIMARY KEY (goods_id),
+	FOREIGN KEY (donation_id) REFFERENCES donation(donation_id)
+);
+
+create table view_delivery (
+	view_delivery_id varchar(5),
+	courier_id varchar(5),
+	delivery_id varchar(5),
+	PRIMARY KEY (view_delivery_id),
+	FOREIGN KEY (courier_id) REFFERENCES courier(courier_id),
+	FOREIGN KEY (delivery_id) REFFERENCES delivery(delivery_id)
+);
+
+create table view_news (
+	view_news_id varchar (6)
+	news_id varchar(5),
+	donor_id varchar(5),
+	PRIMARY KEY (view_news_id),
+	FOREIGN KEY (new_id) REFFERENCES news(news_id),
+	FOREIGN KEY (donor_id) REFFERENCES donor(donor_id)
+);

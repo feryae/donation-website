@@ -1,0 +1,37 @@
+insert into user values ('','','','',)
+
+insert into courier values ('','')
+
+insert into donor values ('','','')
+
+insert into admin values ('','')
+
+insert into delivery values ('','','','')
+
+insert into news values ('','','','','','')
+
+insert into donation values ('','','')
+
+insert into do_money values ('',,,)
+
+insert into do_goods values (,,'','')
+
+insert into view_delivery ('','','')
+
+insert into view_news ('','','')
+
+select * from user;
+
+select * from donor;
+
+select * from admin;
+
+select * from delivery;
+
+select * from news;
+
+select * from donation;
+
+select * from do_money;
+
+select * from do_goods;
